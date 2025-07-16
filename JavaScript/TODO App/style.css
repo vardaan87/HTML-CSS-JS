@@ -1,0 +1,28 @@
+ul {
+  list-style-position: inside; /* Makes bullets align with text */
+  padding: 0; /* Removes default left padding */
+  margin: 0 auto; /* Centers the list horizontally */
+  text-align: center;
+}
+
+li {
+  font-weight: bold;
+  margin: 5px;
+}
+
+* {
+  text-align: center;
+}
+
+input {
+  height: 4rem;
+  width: 25rem;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.add {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 10px;
+}
