@@ -1,0 +1,98 @@
+/* Body setup with soft background and center alignment */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9f7f7, #f2d7d9);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: #444;
+}
+
+/* Heading */
+h2 {
+  color: #ba5370;
+  margin-bottom: 16px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* Paragraph info styling */
+p {
+  color: #6f2063;
+  font-weight: 600;
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+/* Form styling */
+form {
+  margin-top: 24px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  border: 2px solid #d47a7a;
+  background: #fff;
+  color: #444;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #ba5370;
+  box-shadow: 0 0 10px rgba(186, 83, 112, 0.35);
+}
+
+/* Submit button */
+button {
+  padding: 14px 0;
+  background: linear-gradient(90deg, #ba5370, #f4e2d8);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(186, 83, 112, 0.45);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #f4e2d8, #ba5370);
+  box-shadow: 0 8px 24px rgba(186, 83, 112, 0.65);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form {
+    max-width: 95vw;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  textarea {
+    font-size: 14px;
+  }
+  button {
+    font-size: 16px;
+  }
+}

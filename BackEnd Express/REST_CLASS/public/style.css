@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+h3 {
+  text-align: center;
+  color: #e17055;
+  letter-spacing: 1px;
+  margin-top: 36px;
+  margin-bottom: 38px;
+  font-size: 2rem;
+}
+
+.post {
+  background: #fff;
+  margin: 0 auto 26px auto;
+  border-radius: 14px;
+  max-width: 480px;
+  box-shadow: 0 6px 24px rgba(252, 182, 159, 0.14);
+  padding: 30px 28px 20px 28px;
+  transition: box-shadow 0.2s;
+  position: relative;
+  animation: fadeInCard 0.7s;
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post .user {
+  color: #ba5370;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.post .content {
+  color: #444;
+  font-size: 1.18rem;
+  margin: 0;
+  line-height: 1.7;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+/* Add a hover effect for card elevation */
+.post:hover {
+  box-shadow: 0 12px 34px rgba(252, 182, 159, 0.22),
+    0 2px 8px rgba(186, 83, 112, 0.08);
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .post {
+    max-width: 97vw;
+    padding: 18px 7vw 12px 7vw;
+  }
+  h3 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+}
+
+/* Style for the anchor link */
+a {
+  display: inline-block;
+  margin: 24px auto 40px auto;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #ba5370, #f4e2d8);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(186, 83, 112, 0.45);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  max-width: 180px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+/* Hover effect to complement the button styles */
+a:hover {
+  background: linear-gradient(90deg, #f4e2d8, #ba5370);
+  box-shadow: 0 6px 20px rgba(186, 83, 112, 0.65);
+  text-decoration: none;
+}
+
+/* Style the Post Detail page heading */
+h2 {
+  text-align: center;
+  color: #ba5370;
+  font-size: 2.4rem;
+  margin: 40px 0 20px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style for post ID paragraph */
+p {
+  text-align: center;
+  color: #6f2063;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 36px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style for the Delete button inside post */
+.post form {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.post form button {
+  background: #e94e4e; /* strong red for delete */
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(233, 78, 78, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hover effect for Delete button */
+.post form button:hover {
+  background: #cc3b3b;
+  box-shadow: 0 6px 18px rgba(204, 59, 59, 0.6);
+}
